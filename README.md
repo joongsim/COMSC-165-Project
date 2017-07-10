@@ -17,3 +17,6 @@ non-twitter- take a (web/dropbox-?dl=1) album of pictures with geolocation exif 
 
 Twitter API for C++
 https://github.com/swatkat/twitcurl.git
+
+exif parsing library
+https://github.com/mayanklahiri/easyexif
