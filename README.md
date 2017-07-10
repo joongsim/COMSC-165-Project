@@ -1,4 +1,6 @@
 # COMSC-165-Project
+
+[![Join the chat at https://gitter.im/COMSC-165-Project/Lobby](https://badges.gitter.im/COMSC-165-Project/Lobby.svg)](https://gitter.im/COMSC-165-Project/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 needs to use: classes, pointers, structures, Files, exception handling, linked lists, templates) 
 Features:
 Follow a reply chain of a user replying to themselves and put the whole thing into a file
