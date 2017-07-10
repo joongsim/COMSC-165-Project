@@ -14,3 +14,6 @@ generate a google maps custom map- each tweet is its own object put into an arra
 Tweet all this data at the person.
 
 non-twitter- take a (web/dropbox-?dl=1) album of pictures with geolocation exif data and put them in a multigeometry object with paths and placemarks. each placemark will have the picture itself attached.
+
+Twitter API for C++
+https://github.com/swatkat/twitcurl.git
