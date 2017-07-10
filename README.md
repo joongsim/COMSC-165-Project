@@ -18,7 +18,6 @@ non-twitter- take a (web/dropbox-?dl=1) album of pictures with geolocation exif 
 Test twitter account
 
 username: cosmctwittest
-
 password: passwordforproject
 
 Twitter API for C++
