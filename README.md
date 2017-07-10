@@ -15,6 +15,10 @@ Tweet all this data at the person.
 
 non-twitter- take a (web/dropbox-?dl=1) album of pictures with geolocation exif data and put them in a multigeometry object with paths and placemarks. each placemark will have the picture itself attached.
 
+Test twitter account
+username: cosmctwittest
+password: passwordforproject
+
 Twitter API for C++
 https://github.com/swatkat/twitcurl.git
 
