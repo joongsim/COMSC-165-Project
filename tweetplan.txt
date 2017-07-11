@@ -1,0 +1,7 @@
+
+old plans do not need:
+Scrape a timeframe of tweets and make a graph of what times user tweets
+Make a graph showing how many different people replied to each tweet depending on time of day?
+wordcloud of tweets- generate an image.
+Display outlier tweets- most replies/rts.
+do the above but compare two objects- people or hashtags.

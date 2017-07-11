@@ -1,0 +1,14 @@
+# COMSC-165-Project
+
+The program accepts input from a variety of sources, each containing a set of geotagged time-sensitive data (such as geotagged tweets, or jpeg images with exif tags for both time and location). The program then generates a kml file with a path object drawn in chronological order based on the data. The file also includes placemarks at each node, embedding the contents of each object (image or tweet text), as well as the time of creation. The program will use classes, pointers, files, linked lists, and templates.
+
+Step by step:
+- put location and time from each object into classes. Use template for content (can be string or binary)
+    - twitter: include any self replies in both directions as objects to be scraped.
+    - web jpegs: each picture should be a hotlink if possible.
+    - local jpegs: each pic is stored as a file pointer and read into kmz file later.
+    - text entry: launch option to either directly geotag the address, or to ask for browser confirmation first.
+- each location object is put into a linked list in chronological order.
+- and then appended to a kml file. the kml consists of a layer with two sublayers, one for the path and one for all the objects.
+    - extra credit: add capability to append/merge with existing file's sublayers.
+    - extra credit: add capability to extract pictures from kmz or hotlinked kml to local dir (fail gracefully for hotlinks).
