@@ -19,22 +19,6 @@ string formatPlacemark(Location*);
 
 int main()
 {
-	// Test Location structure
-	Location* test1 = new Location;
-	test1->latitude = 33.3421;
-	test1->longitude = 34.134;
-	test1->time = "2017:07:22 12:22:33";
-	test1->fname = "C:/Users/joonj/Documents/COMSC 165/Project/Project/Test.jpg";
-	
-	Location* test2 = new Location;
-	test2->latitude = 35.34;
-	test2->longitude = 36.3;
-	test2->time = "2017:02:11 12:34:33";
-	test2->fname = "C:/Users/joonj/Downloads/dXmULbx.jpg";
-
-	test1->next = test2;
-	test2->next = nullptr;
-
 	// ofstream object for writing kml file
 	ofstream handle;
 
