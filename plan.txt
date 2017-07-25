@@ -10,3 +10,4 @@ Step by step:
 - and then appended to a kml file. the kml consists of a layer with two sublayers, one for the path and one for all the objects.
     - extra credit: add capability to append/merge with existing file's sublayers.
     - extra credit: add capability to extract pictures from kmz or hotlinked kml to local dir (fail gracefully for hotlinks).
+    - extra credit: add a closeness threshold for merging pics.
