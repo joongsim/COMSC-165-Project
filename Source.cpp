@@ -2,8 +2,6 @@
 #include <fstream>
 #include <sstream>
 #include <string>
-#include "LinkedList.h"
-
 using namespace std;
 
 struct Location
@@ -58,6 +56,8 @@ int main()
 
 string formatPlacemark(Location *point)
 {
+	Location *nodePtr = point;		// to traverse linked list
+	int placeCounter = 1;			// counter variable for pushpin name
 	ostringstream ss;
 	ss << "<Document>\n"
 		<< "<name>Test.kml</name>\n"
@@ -129,66 +129,45 @@ string formatPlacemark(Location *point)
 		<< "<styleUrl>#m_ylw-pushpin0</styleUrl>\n"
 		<< "<LineString>\n"
 		<< "<tessellate>1</tessellate>\n"
-		<< "<coordinates>\n"
+		<< "<coordinates>\n";
 		// Need loop here to go through list
-		<< point->latitude << "," << point->longitude << ",0\n"	// Writes list of coordinates
-		<< "</coordinates>\n"
-<< "</LineString>\n"
-<< "</Placemark>\n"
-<< "<Folder>\n"
-<< "<name>Pictures</name>\n"
-<< "<open>1</open>\n"
+	while (nodePtr)
+	{
+		ss << nodePtr->latitude << "," << nodePtr->longitude << ",0\n";	// Writes list of coordinates
+		nodePtr = nodePtr->next;
+	}
+	nodePtr = point;
+	ss << "</coordinates>\n"
+		<< "</LineString>\n"
+		<< "</Placemark>\n"
+		<< "<Folder>\n"
+		<< "<name>Pictures</name>\n"
+		<< "<open>1</open>\n";
 
 // Begin loop to traverse list
-<< "<Placemark>\n"
-<< "<name>Place 1</name>\n"	// replace with 
-<< "<description><![CDATA[<img style = \"max-width:500px;\" src=\""
-<< point->fname			// Writes image file path
-<< "\">]]></description>\n"
-<< "<styleUrl>#m_ylw-pushpin</styleUrl>\n"
-<< "<Point>\n"
-<< "<altitudeMode>relativeToGround</altitudeMode>\n"
-<< "<gx:drawOrder>1</gx:drawOrder>\n"
-<< "<coordinates>\n"
-<< point->latitude << "," << point->longitude << ",0\n"		// Writes coordinates of placemark
-<< "</coordinates>\n"
-<< "</Point>\n"
-<< "</Placemark>\n"
+	while (nodePtr)
+	{
+		ss << "<Placemark>\n"
+			<< "<name>Place " << placeCounter << "</name>\n"	// numbers push pins
+			<< "<description><![CDATA[<img style = \"max-width:500px;\" src=\"file:///"
+			<< nodePtr->fname			// Writes image file path
+			<< "\">]]></description>\n"
+			<< "<styleUrl>#m_ylw-pushpin</styleUrl>\n"
+			<< "<Point>\n"
+			<< "<altitudeMode>relativeToGround</altitudeMode>\n"
+			<< "<gx:drawOrder>1</gx:drawOrder>\n"
+			<< "<coordinates>\n"
+			<< nodePtr->latitude << "," << nodePtr->longitude << ",0\n"		// Writes coordinates of placemark
+			<< "</coordinates>\n"
+			<< "</Point>\n"
+			<< "</Placemark>\n";
+		nodePtr = nodePtr->next;
+		placeCounter++;
+	}
 // End loop
-<< "</Folder>\n"
+ss << "</Folder>\n"
 << "</Folder>\n"
 << "</Document>\n";
-
-		
-		
-		
-		/*ss << "<Placemark>\n"			// First writes path
-		<< "<name>Path</name>\n"
-		<< "<description>This is the path between the 2 points</description>\n"
-		<< "<styleUrl>#pathstyle</styleUrl>\n"
-		<< "<LineString>\n"
-		<< "<tessellate>1</tessellate>\n"
-		<< "<coordinates>"
-		<< point.latitude << "," << point.longitude << ",0"
-		<< " "
-		<< 1.324 << "," << 3.2234 << ",0"
-		<< "</coordinates>\n"
-		<< "</LineString>\n"
-		// Writing Points
-		<< "<name>Placemark</name>\n"
-		<< "<description>";
-		<< "<![CDATA[<img src = "
-		<< point.fname[i]
-		<< ">]]></description>"
-		<< "<Point>\n"
-		<< "<coordinates>"
-		<< point.latitude << "," << point.longitude << ",0"
-		<< "</coordinates>"
-		<< "</Point>"
-		<< "</Placemark>";
-		*/
-
-	
 
 	return ss.str();
 }
