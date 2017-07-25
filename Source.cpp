@@ -130,11 +130,11 @@ string formatPlacemark(Location *point)
 		<< "<LineString>\n"
 		<< "<tessellate>1</tessellate>\n"
 		<< "<coordinates>\n";
-		// Need loop here to go through list
-	while (nodePtr)
+		
+	while (nodePtr)	// While node exists
 	{
 		ss << nodePtr->latitude << "," << nodePtr->longitude << ",0\n";	// Writes list of coordinates
-		nodePtr = nodePtr->next;
+		nodePtr = nodePtr->next;										// Traverse list
 	}
 	nodePtr = point;
 	ss << "</coordinates>\n"
@@ -145,13 +145,13 @@ string formatPlacemark(Location *point)
 		<< "<open>1</open>\n";
 
 // Begin loop to traverse list
-	while (nodePtr)
+	while (nodePtr)		// While loop exists, write
 	{
 		ss << "<Placemark>\n"
 			<< "<name>Place " << placeCounter << "</name>\n"	// numbers push pins
 			<< "<description><![CDATA[<img style = \"max-width:500px;\" src=\"file:///"
 			<< nodePtr->fname			// Writes image file path
-			<< "\">]]></description>\n"
+			<< "\">" << nodePtr->time << "]]></description>\n"
 			<< "<styleUrl>#m_ylw-pushpin</styleUrl>\n"
 			<< "<Point>\n"
 			<< "<altitudeMode>relativeToGround</altitudeMode>\n"
@@ -161,8 +161,8 @@ string formatPlacemark(Location *point)
 			<< "</coordinates>\n"
 			<< "</Point>\n"
 			<< "</Placemark>\n";
-		nodePtr = nodePtr->next;
-		placeCounter++;
+		nodePtr = nodePtr->next;			// Traverse list
+		placeCounter++;						// Increment counter name
 	}
 // End loop
 ss << "</Folder>\n"
