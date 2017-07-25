@@ -19,6 +19,22 @@ string formatPlacemark(Location*);
 
 int main()
 {
+	// Test Location structure
+	Location* test1 = new Location;
+	test1->latitude = 33.3421;
+	test1->longitude = 34.134;
+	test1->time = "2017:07:22 12:22:33";
+	test1->fname = "C:/Users/joonj/Documents/COMSC 165/Project/Project/Test.jpg";
+	
+	Location* test2 = new Location;
+	test2->latitude = 35.34;
+	test2->longitude = 36.3;
+	test2->time = "2017:02:11 12:34:33";
+	test2->fname = "C:/Users/joonj/Downloads/dXmULbx.jpg";
+
+	test1->next = test2;
+	test2->next = nullptr;
+
 	// ofstream object for writing kml file
 	ofstream handle;
 
@@ -114,36 +130,31 @@ string formatPlacemark(Location *point)
 		<< "<LineString>\n"
 		<< "<tessellate>1</tessellate>\n"
 		<< "<coordinates>\n"
-		<< point->latitude << "," << point->longitude << ",0\n"
+		// Need loop here to go through list
+		<< point->latitude << "," << point->longitude << ",0\n"	// Writes list of coordinates
 		<< "</coordinates>\n"
 << "</LineString>\n"
 << "</Placemark>\n"
 << "<Folder>\n"
 << "<name>Pictures</name>\n"
 << "<open>1</open>\n"
+
+// Begin loop to traverse list
 << "<Placemark>\n"
-<< "<name>Place 1</name>\n"
+<< "<name>Place 1</name>\n"	// replace with 
 << "<description><![CDATA[<img style = \"max-width:500px;\" src=\""
-<< point->fname
+<< point->fname			// Writes image file path
 << "\">]]></description>\n"
-/*<LookAt>
-<longitude>-121.976647721404< / longitude>
-<latitude>37.74856267427221< / latitude>
-<altitude>0< / altitude>
-<heading>-0.07080521148273082< / heading>
-<tilt>0< / tilt>
-<range>560003.6388045299< / range>
-<gx:altitudeMode>relativeToSeaFloor< / gx:altitudeMode>
-< / LookAt>
-<styleUrl>#m_ylw - pushpin< / styleUrl>*/
 << "<styleUrl>#m_ylw-pushpin</styleUrl>\n"
 << "<Point>\n"
+<< "<altitudeMode>relativeToGround</altitudeMode>\n"
 << "<gx:drawOrder>1</gx:drawOrder>\n"
 << "<coordinates>\n"
-<< point->latitude << "," << point->longitude << ",0\n"
+<< point->latitude << "," << point->longitude << ",0\n"		// Writes coordinates of placemark
 << "</coordinates>\n"
 << "</Point>\n"
 << "</Placemark>\n"
+// End loop
 << "</Folder>\n"
 << "</Folder>\n"
 << "</Document>\n";
