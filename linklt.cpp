@@ -8,7 +8,7 @@ using namespace std;
 int a = strcmp("a", "b");
 
 
-string formatPlacemark(Location*);
+string formatPlacemark(listnode*);
 
 int main()
 {
@@ -33,9 +33,9 @@ int main()
 	return 0;
 }
 
-string formatPlacemark(Location *point)
+string formatPlacemark(listnode *point)
 {
-	Location *nodePtr = point;		// to traverse linked list
+	listnode *nodePtr = point;		// to traverse linked list
 	int placeCounter = 1;			// counter variable for pushpin name
 	ostringstream ss;
 	ss << "<Document>\n"
