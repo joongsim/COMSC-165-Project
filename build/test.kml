@@ -1,0 +1,784 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+<Document>
+<name>Test.kml</name>
+<StyleMap id="m_ylw-pushpin">
+<Pair>
+<key>normal</key>
+<styleUrl>#s_ylw-pushpin</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+</Pair>
+</StyleMap>
+<Style id ="s_ylw-pushpin">
+<IconStyle>
+<scale>1.1</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+</Icon>
+<hotSpot x = "20" y = "2" xunits = "pixels" yunits = "pixels"/>
+</IconStyle>
+<ListStyle>
+</ListStyle>
+</Style>
+<Style id="s_ylw-pushpin_hl">
+<IconStyle>
+<scale>1.3</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+</Icon>
+<hotSpot x = "20" y = "2" xunits = "pixels" yunits = "pixels"/>
+</IconStyle>
+</Style>
+<Style id="s_ylw-pushpin0">
+<IconStyle>
+<scale>1.1</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+</Icon>
+<hotSpot x="20" y ="2" xunits="pixels" yunits="pixels"/>
+</IconStyle>
+</Style><Style id="s_ylw-pushpin_hl0">
+<IconStyle>
+<scale>1.3</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+</Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle>
+<ListStyle>
+</ListStyle>
+</Style>
+<StyleMap id="m_ylw-pushpin0">
+<Pair>
+<key>normal</key>
+<styleUrl>#s_ylw-pushpin0</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+</Pair>
+</StyleMap>
+<Folder>
+<name>Test</name>
+<open>1</open>
+<Placemark>
+<name>Path</name>
+<styleUrl>#m_ylw-pushpin0</styleUrl>
+<LineString>
+<tessellate>1</tessellate>
+<coordinates>
+30.2818,59.941,0
+30.2818,59.941,0
+30.3048,59.9676,0
+30.3048,59.9676,0
+30.3048,59.9676,0
+30.3385,59.9335,0
+30.3407,59.9311,0
+30.3385,59.9335,0
+30.3407,59.9311,0
+30.3407,59.9311,0
+30.3407,59.9311,0
+30.3407,59.9311,0
+30.3386,59.9334,0
+30.361,59.9437,0
+30.361,59.9437,0
+30.361,59.9437,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+30.3386,59.9334,0
+4.33904,50.894,0
+4.33928,50.8939,0
+4.33928,50.8939,0
+4.33928,50.8939,0
+4.33904,50.8944,0
+4.33889,50.8944,0
+4.33848,50.8944,0
+4.33848,50.8944,0
+4.33813,50.894,0
+4.33815,50.894,0
+4.33868,50.8939,0
+4.33842,50.8938,0
+4.33842,50.8938,0
+4.33838,50.8939,0
+4.33838,50.8939,0
+4.33778,50.894,0
+4.33778,50.894,0
+4.33772,50.894,0
+4.33772,50.894,0
+4.33803,50.8943,0
+4.33803,50.8943,0
+4.33868,50.8963,0
+4.35866,50.8428,0
+4.35767,50.8435,0
+30.3387,59.9334,0
+</coordinates>
+</LineString>
+</Placemark>
+<Folder>
+<name>Pictures</name>
+<open>1</open>
+<Placemark>
+<name>Place 1</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-09-03 19.16.15.jpg">2011:09:03 19:16:15]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.2818,59.941,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 2</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-09-03 19.17.51.jpg">2011:09:03 19:17:51]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.2818,59.941,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 3</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-09-09 15.11.12.jpg">2011:09:09 15:11:12]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3048,59.9676,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 4</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-09-09 15.11.32.jpg">2011:09:09 15:11:32]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3048,59.9676,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 5</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-09-09 15.11.40.jpg">2011:09:09 15:11:40]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3048,59.9676,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 6</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-10-06 11.13.48.jpg">2011:10:06 11:13:48]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3385,59.9335,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 7</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-10-06 11.25.40.jpg">2011:10:06 11:25:40]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3407,59.9311,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 8</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-10-06 11.27.47.jpg">2011:10:06 11:27:47]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3385,59.9335,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 9</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-10-07 15.16.59.jpg">2011:10:07 15:16:59]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3407,59.9311,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 10</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-10-07 15.17.05.jpg">2011:10:07 15:17:05]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3407,59.9311,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 11</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-10-07 15.17.11.jpg">2011:10:07 15:17:11]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3407,59.9311,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 12</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-10-07 15.17.17.jpg">2011:10:07 15:17:17]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3407,59.9311,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 13</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-14 16.26.54.jpg">2011:11:14 16:26:54]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 14</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-15 16.03.48.jpg">2011:11:15 16:03:48]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.361,59.9437,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 15</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-15 16.03.57.jpg">2011:11:15 16:03:57]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.361,59.9437,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 16</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-15 16.04.04.jpg">2011:11:15 16:04:04]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.361,59.9437,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 17</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-17 11.58.36.jpg">2011:11:17 11:58:36]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 18</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-17 11.59.06.jpg">2011:11:17 11:59:06]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 19</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-17 11.59.16.jpg">2011:11:17 11:59:16]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 20</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-21 10.16.05.jpg">2011:11:21 10:16:05]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 21</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-21 10.16.15.jpg">2011:11:21 10:16:15]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 22</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-21 10.16.28.jpg">2011:11:21 10:16:28]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 23</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-21 10.17.24.jpg">2011:11:21 10:17:24]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 24</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-21 13.37.06.jpg">2011:11:21 13:37:06]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 25</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-21 13.37.11.jpg">2011:11:21 13:37:11]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 26</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-21 13.37.28.jpg">2011:11:21 13:37:28]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 27</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-21 13.37.32.jpg">2011:11:21 13:37:32]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 28</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-21 13.37.36.jpg">2011:11:21 13:37:36]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 29</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2011-11-26 14.58.32.jpg">2011:11:26 14:58:32]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3386,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 30</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.06.02.jpg">2012:01:07 17:06:02]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33904,50.894,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 31</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.07.00.jpg">2012:01:07 17:07:00]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33928,50.8939,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 32</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.07.07.jpg">2012:01:07 17:07:07]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33928,50.8939,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 33</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.07.14.jpg">2012:01:07 17:07:14]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33928,50.8939,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 34</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.23.10.jpg">2012:01:07 17:23:10]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33904,50.8944,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 35</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.26.00.jpg">2012:01:07 17:26:00]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33889,50.8944,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 36</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.26.52.jpg">2012:01:07 17:26:52]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33848,50.8944,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 37</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.29.25.jpg">2012:01:07 17:29:25]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33848,50.8944,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 38</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.29.57.jpg">2012:01:07 17:29:57]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33813,50.894,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 39</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.31.54.jpg">2012:01:07 17:31:54]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33815,50.894,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 40</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.32.02.jpg">2012:01:07 17:32:02]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33868,50.8939,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 41</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/a.jpg">2012:01:07 17:33:26]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33842,50.8938,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 42</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.33.26.jpg">2012:01:07 17:33:26]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33842,50.8938,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 43</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/ghj.jpg">2012:01:07 17:33:34]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33838,50.8939,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 44</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.33.34.jpg">2012:01:07 17:33:34]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33838,50.8939,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 45</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/gadf.jpg">2012:01:07 17:35:16]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33778,50.894,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 46</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.35.16.jpg">2012:01:07 17:35:16]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33778,50.894,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 47</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/b n.jpg">2012:01:07 17:35:31]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33772,50.894,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 48</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.35.31.jpg">2012:01:07 17:35:31]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33772,50.894,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 49</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/67.jpg">2012:01:07 17:42:18]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33803,50.8943,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 50</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 17.42.18.jpg">2012:01:07 17:42:18]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33803,50.8943,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 51</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 18.18.48.jpg">2012:01:07 18:18:48]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.33868,50.8963,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 52</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-06 16.07.16.jpg">2015:06:03 00:59:14]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.35866,50.8428,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 53</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-07 12.39.49.jpg">2015:06:03 00:59:16]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+4.35767,50.8435,0
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Place 54</name>
+<description><![CDATA[<img style = "max-width:500px;" src="file:///Users/andrey/Public/2012-01-25 14.38.09.jpg">2015:06:03 01:00:02]]></description>
+<styleUrl>#m_ylw-pushpin</styleUrl>
+<Point>
+<altitudeMode>relativeToGround</altitudeMode>
+<gx:drawOrder>1</gx:drawOrder>
+<coordinates>
+30.3387,59.9334,0
+</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+</Document>
+</kml>

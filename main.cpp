@@ -1,16 +1,19 @@
-
-#include <stdio.h>
-#include "exif.hpp"
-#include <dirent.h>
-#include "linklt.hpp"
 #include <iostream>
+#include <dirent.h>
+#include <fstream>
+#include <string>
+
+#include "kml.hpp"
+#include "exif.hpp"
+#include "linklt.hpp"
+#include "twitclient.hpp"
+
 using namespace std;
 int main(int argc, char *argv[]) {
-
+    int count = 0, fcount = 0; //pics with and without exif data
     if (argc < 2) {
-        printf("Usage: test <dir>\n");
+        cout << "Usage: COMSC165 <dir>\n";
     }
-    argv[1] = "/Users/andrey/Public/";
     linkl flist;
     DIR *dir;
     struct dirent *ent;
@@ -18,46 +21,79 @@ int main(int argc, char *argv[]) {
         /* print all the files and directories within directory */
         while ((ent = readdir (dir)) != NULL)
         {
-            
-            std::string name(ent->d_name);
+
+            string name(ent->d_name);
             string path(argv[1]);
             string fullname = path + name;
             if(name.length() > 3 && name.substr( name.length() - 3 ) == "jpg")
             {
                 // Read the JPEG file into a buffer
-                FILE *fp = fopen(fullname.c_str(), "rb");
-                if (!fp) {
-                    printf("Can't open file.\n");
+                // cout << "Processing file " <<  fullname << endl;
+                ifstream file;
+                file.open(fullname, ios::binary);
+                if(!file)
+                {
+                    cout << "can't open file\n";
                     return -1;
                 }
-                fseek(fp, 0, SEEK_END);
-                unsigned long fsize = ftell(fp);
-                rewind(fp);
-                unsigned char *buf = new unsigned char[fsize];
-                if (fread(buf, 1, fsize, fp) != fsize) {
-                    printf("Can't read file.\n");
+                fcount++;
+                file.seekg(0, ios_base::end);
+                unsigned long fsize = file.tellg();
+                file.seekg(0, ios_base::beg);
+                char *buf = new char[fsize];
+                file.read(buf, fsize); //failure sets fail bit
+                if (!file) {
                     delete[] buf;
-                    return -2;
+                    cout << "can't read file\n";
+                    return -1;
                 }
-                fclose(fp);
-                
+                file.close();
+
                 // Parse EXIF
                 easyexif::EXIFInfo result;
-                int code = result.parseFrom(buf, fsize);
+                int code = result.parseFrom(reinterpret_cast<unsigned char*>(buf), static_cast<int>(fsize));
                 delete[] buf;
-                if (code) {
-                    printf("Error parsing EXIF: code %d\n", code);
-                    return -3;
+                if (code)
+                    cout <<"Error parsing EXIF: code " << code << endl;
+                else
+                {
+                    string time;
+                    if (strcmp(result.DateTime.c_str(), result.DateTimeOriginal.c_str()) < 0) //sometimes only one of these is populated, so we pick the bigger one
+                        time = result.DateTimeOriginal;
+                    else
+                        time = result.DateTime;
+                    if (result.GeoLocation.Latitude != 0 || result.GeoLocation.Longitude != 0) //to catch pictures with no coordinates. sorry equator-dwellers
+                    {
+                        listnode curpic = {time, result.GeoLocation.Latitude, result.GeoLocation.Longitude, fullname};
+                        flist.insert(&curpic);
+                        count++;
+                    }
                 }
-                listnode curpic = {result.DateTime, result.GeoLocation.Latitude, result.GeoLocation.Longitude, name};
-                flist.insert(&curpic);
             }
         }
         closedir (dir);
-    } else {
-        /* could not open directory */
-        perror ("");
     }
-    flist.display();
+    else
+    {
+        cout << "failed to open dir\n";
+        return -1;
+    }
+    //flist.display();
+    writekml("test.kml", flist.showhead());
+    cout << "using " << count << " of " << fcount << " pictures\n";
+
+    listnode* pictime = flist.showhead();
+    string firstpicdate = pictime->time.substr(0, 10);
+    while(pictime->next)
+        pictime = pictime->next;
+    string lastpicdate = pictime->time.substr(0, 10);
+    string picinterval;
+    if (firstpicdate == lastpicdate)
+        picinterval = "on " + firstpicdate.substr();
+    else
+        picinterval = "from " + firstpicdate + " to " + lastpicdate + ".";
+    OauthTwitPass pass;
+    tweetauth(pass);
+    tweet("I made a kml file with " + to_string(count) + "pictures! They were taken " + picinterval, pass);
     return 0;
 }

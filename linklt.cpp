@@ -8,9 +8,7 @@
 #include <iostream>
 using namespace std;
 #include "linklt.hpp"
-#include <time.h>
 #include <string>
-int a = strcmp("a", "b");
 linkl::linkl()
 {
     head = nullptr;
@@ -71,4 +69,9 @@ void linkl::tofile(char* filename)
         //kml stuff ends
         nodeptr = nodeptr->next;
     }
+}
+
+listnode* linkl::showhead()
+{
+    return head;
 }
