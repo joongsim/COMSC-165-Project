@@ -1,9 +1,6 @@
-
-#include <stdio.h>
 #include <iostream>
 #include <dirent.h>
 #include <fstream>
-#include <ctime>
 #include <string>
 
 #include "kml.hpp"
@@ -25,7 +22,7 @@ int main(int argc, char *argv[]) {
         while ((ent = readdir (dir)) != NULL)
         {
             
-            std::string name(ent->d_name);
+            string name(ent->d_name);
             string path(argv[1]);
             string fullname = path + name;
             if(name.length() > 3 && name.substr( name.length() - 3 ) == "jpg")
