@@ -5,7 +5,6 @@
 
 #include "linklt.hpp"
 #include "kml.hpp"
-
 using namespace std;
 
 
@@ -153,7 +152,7 @@ string formatPlacemark(listnode *point)
 		<< "<name>Pictures</name>\n"
 		<< "<open>1</open>\n";
 
-// Begin loop to traverse list
+// Begin loop to traverse list  
 	while (nodePtr)		// While loop exists, write
 	{
 		ss << "<Placemark>\n"

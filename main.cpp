@@ -21,7 +21,6 @@ int main(int argc, char *argv[]) {
         /* print all the files and directories within directory */
         while ((ent = readdir (dir)) != NULL)
         {
-
             string name(ent->d_name);
             string path(argv[1]);
             string fullname = path + name;
@@ -48,7 +47,6 @@ int main(int argc, char *argv[]) {
                     return -1;
                 }
                 file.close();
-
                 // Parse EXIF
                 easyexif::EXIFInfo result;
                 int code = result.parseFrom(reinterpret_cast<unsigned char*>(buf), static_cast<int>(fsize));
@@ -81,7 +79,7 @@ int main(int argc, char *argv[]) {
     //flist.display();
     writekml("test.kml", flist.showhead());
     cout << "using " << count << " of " << fcount << " pictures\n";
-
+  
     listnode* pictime = flist.showhead();
     string firstpicdate = pictime->time.substr(0, 10);
     while(pictime->next)
@@ -92,6 +90,7 @@ int main(int argc, char *argv[]) {
         picinterval = "on " + firstpicdate.substr();
     else
         picinterval = "from " + firstpicdate + " to " + lastpicdate + ".";
+  
     OauthTwitPass pass;
     tweetauth(pass);
     tweet("I made a kml file with " + to_string(count) + "pictures! They were taken " + picinterval, pass);

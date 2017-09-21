@@ -31,6 +31,7 @@ void tweetauth(OauthTwitPass& pass)
     twitterObj.getOAuth().getOAuthTokenKey( pass.key );
     twitterObj.getOAuth().getOAuthTokenSecret( pass.secret );
 }
+
 void tweet(const std::string& text, OauthTwitPass& pass)
 {
     twitCurl twitterObj;

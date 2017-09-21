@@ -16,6 +16,6 @@ struct OauthTwitPass
     std::string consumerKey;
     std::string consumerSecret;
 };
-void tweetauth(OauthTwitPass&);
-void tweet(const std::string& text, OauthTwitPass&);
+void tweetauth(OauthTwitPass& pass);
+void tweet(const std::string& text, OauthTwitPass& pass);
 #endif /* twitclient_hpp */
