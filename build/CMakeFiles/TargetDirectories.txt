@@ -1,0 +1,6 @@
+/Users/andrey/COMSC-165-Project/build/CMakeFiles/rebuild_cache.dir
+/Users/andrey/COMSC-165-Project/build/CMakeFiles/edit_cache.dir
+/Users/andrey/COMSC-165-Project/build/CMakeFiles/COMSC165.dir
+/Users/andrey/COMSC-165-Project/build/libtwitcurl/CMakeFiles/rebuild_cache.dir
+/Users/andrey/COMSC-165-Project/build/libtwitcurl/CMakeFiles/edit_cache.dir
+/Users/andrey/COMSC-165-Project/build/libtwitcurl/CMakeFiles/twitcurl.dir

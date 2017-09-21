@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libtwitcurl.a  CMakeFiles/twitcurl.dir/base64.cpp.o CMakeFiles/twitcurl.dir/HMAC_SHA1.cpp.o CMakeFiles/twitcurl.dir/oauthlib.cpp.o CMakeFiles/twitcurl.dir/SHA1.cpp.o CMakeFiles/twitcurl.dir/urlencode.cpp.o CMakeFiles/twitcurl.dir/twitcurl.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libtwitcurl.a

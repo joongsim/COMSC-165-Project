@@ -1,0 +1,8 @@
+cmake_minimum_required (VERSION 2.6)
+project (COMSC165)
+set(CURL_LIBRARY "-lcurl") 
+find_package(CURL REQUIRED)
+add_executable(COMSC165 main.cpp linklt.cpp exif.cpp kml.cpp twitclient.cpp)
+add_subdirectory(libtwitcurl) 
+include_directories ("${PROJECT_SOURCE_DIR}/libtwitcurl" ${CURL_INCLUDE_DIR})
+target_link_libraries(COMSC165 twitcurl ${CURL_LIBRARIES})
